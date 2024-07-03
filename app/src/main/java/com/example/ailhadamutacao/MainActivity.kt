@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
 import com.example.ailhadamutacao.ui.theme.AIlhaDaMutaçãoTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +22,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AIlhaDaMutaçãoTheme {
-                CenaUm()
+//                val navController = rememberNavController()
+//                NavHost(navController = navController, startDestination = "TelaInicial") {}
+//            
+                TelaInicial()
             }
         }
     }
